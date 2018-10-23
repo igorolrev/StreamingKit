@@ -15,6 +15,17 @@
 		5B949CD71A1140E4005675A0 /* STKHTTPDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E7C4FB188D5E550010896F /* STKHTTPDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B949CD81A1140E4005675A0 /* STKLocalFileDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E7C4FD188D5E550010896F /* STKLocalFileDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B949CD91A1140E4005675A0 /* STKQueueEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BF65D0189A6582004DD08C /* STKQueueEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88F6925F217F3DC600945821 /* StreamingKitTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F6925E217F3DC600945821 /* StreamingKitTV.m */; };
+		88F69260217F3DC600945821 /* StreamingKitTV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88F6925D217F3DC600945821 /* StreamingKitTV.h */; };
+		88F69266217F3DDF00945821 /* STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E7C4F2188D5E550010896F /* STKAudioPlayer.m */; };
+		88F69267217F3DDF00945821 /* STKAutoRecoveringHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E7C4F4188D5E550010896F /* STKAutoRecoveringHTTPDataSource.m */; };
+		88F69268217F3DDF00945821 /* STKCoreFoundationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E7C4F6188D5E550010896F /* STKCoreFoundationDataSource.m */; };
+		88F69269217F3DDF00945821 /* STKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E7C4F8188D5E550010896F /* STKDataSource.m */; };
+		88F6926A217F3DDF00945821 /* STKDataSourceWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E7C4FA188D5E550010896F /* STKDataSourceWrapper.m */; };
+		88F6926B217F3DDF00945821 /* STKHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E7C4FC188D5E550010896F /* STKHTTPDataSource.m */; };
+		88F6926C217F3DDF00945821 /* STKLocalFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E7C4FE188D5E550010896F /* STKLocalFileDataSource.m */; };
+		88F6926D217F3DDF00945821 /* STKQueueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BF65D1189A6582004DD08C /* STKQueueEntry.m */; };
+		88F6926E217F3DDF00945821 /* NSMutableArray+STKAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BF65D4189A65C6004DD08C /* NSMutableArray+STKAudioPlayer.m */; };
 		A1A4996B189E744400E2A2E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A4996A189E744400E2A2E2 /* Cocoa.framework */; };
 		A1A49975189E744500E2A2E2 /* StreamingKitMac.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A49974189E744500E2A2E2 /* StreamingKitMac.m */; };
 		A1A4997B189E744500E2A2E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E7C4D9188D57F60010896F /* XCTest.framework */; };
@@ -79,6 +90,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		88F69259217F3DC600945821 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				88F69260217F3DC600945821 /* StreamingKitTV.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1E7C4C6188D57F50010896F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,6 +112,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		88F6925B217F3DC600945821 /* libStreamingKitTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStreamingKitTV.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F6925D217F3DC600945821 /* StreamingKitTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamingKitTV.h; sourceTree = "<group>"; };
+		88F6925E217F3DC600945821 /* StreamingKitTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreamingKitTV.m; sourceTree = "<group>"; };
 		A1A49969189E744400E2A2E2 /* libStreamingKitMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStreamingKitMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A4996A189E744400E2A2E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		A1A4996D189E744500E2A2E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +160,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		88F69258217F3DC600945821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1A49966189E744400E2A2E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,6 +205,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88F6925C217F3DC600945821 /* StreamingKitTV */ = {
+			isa = PBXGroup;
+			children = (
+				88F6925D217F3DC600945821 /* StreamingKitTV.h */,
+				88F6925E217F3DC600945821 /* StreamingKitTV.m */,
+			);
+			path = StreamingKitTV;
+			sourceTree = "<group>";
+		};
 		A1A4996C189E744500E2A2E2 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +276,7 @@
 				A1E7C4E1188D57F60010896F /* StreamingKitTests */,
 				A1A49970189E744500E2A2E2 /* StreamingKitMac */,
 				A1A49980189E744500E2A2E2 /* StreamingKitMacTests */,
+				88F6925C217F3DC600945821 /* StreamingKitTV */,
 				A1E7C4CA188D57F50010896F /* Frameworks */,
 				A1E7C4C9188D57F50010896F /* Products */,
 				A1A499E1189E769A00E2A2E2 /* ExampleAppMac.xcodeproj */,
@@ -249,6 +290,7 @@
 				A1E7C4D8188D57F60010896F /* StreamingKitTests.xctest */,
 				A1A49969189E744400E2A2E2 /* libStreamingKitMac.a */,
 				A1A4997A189E744500E2A2E2 /* StreamingKitMacTests.xctest */,
+				88F6925B217F3DC600945821 /* libStreamingKitTV.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -347,6 +389,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		88F6925A217F3DC600945821 /* StreamingKitTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88F69265217F3DC600945821 /* Build configuration list for PBXNativeTarget "StreamingKitTV" */;
+			buildPhases = (
+				88F69257217F3DC600945821 /* Sources */,
+				88F69258217F3DC600945821 /* Frameworks */,
+				88F69259217F3DC600945821 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamingKitTV;
+			productName = StreamingKitTV;
+			productReference = 88F6925B217F3DC600945821 /* libStreamingKitTV.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A1A49968189E744400E2A2E2 /* StreamingKitMac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1A4998C189E744500E2A2E2 /* Build configuration list for PBXNativeTarget "StreamingKitMac" */;
@@ -427,6 +486,12 @@
 				CLASSPREFIX = STK;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Thong Nguyen";
+				TargetAttributes = {
+					88F6925A217F3DC600945821 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = A1E7C4C3188D57F50010896F /* Build configuration list for PBXProject "StreamingKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -450,6 +515,7 @@
 				A1E7C4D7188D57F60010896F /* StreamingKitTests */,
 				A1A49968189E744400E2A2E2 /* StreamingKitMac */,
 				A1A49979189E744500E2A2E2 /* StreamingKitMacTests */,
+				88F6925A217F3DC600945821 /* StreamingKitTV */,
 			);
 		};
 /* End PBXProject section */
@@ -491,6 +557,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		88F69257217F3DC600945821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F69267217F3DDF00945821 /* STKAutoRecoveringHTTPDataSource.m in Sources */,
+				88F6926B217F3DDF00945821 /* STKHTTPDataSource.m in Sources */,
+				88F69268217F3DDF00945821 /* STKCoreFoundationDataSource.m in Sources */,
+				88F6926C217F3DDF00945821 /* STKLocalFileDataSource.m in Sources */,
+				88F6926E217F3DDF00945821 /* NSMutableArray+STKAudioPlayer.m in Sources */,
+				88F69266217F3DDF00945821 /* STKAudioPlayer.m in Sources */,
+				88F6926A217F3DDF00945821 /* STKDataSourceWrapper.m in Sources */,
+				88F69269217F3DDF00945821 /* STKDataSource.m in Sources */,
+				88F6925F217F3DC600945821 /* StreamingKitTV.m in Sources */,
+				88F6926D217F3DDF00945821 /* STKQueueEntry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1A49965189E744400E2A2E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -575,6 +658,81 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		88F69261217F3DC600945821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Debug;
+		};
+		88F69262217F3DC600945821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+			};
+			name = Release;
+		};
 		A1A49988189E744500E2A2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -805,6 +963,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		88F69265217F3DC600945821 /* Build configuration list for PBXNativeTarget "StreamingKitTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F69261217F3DC600945821 /* Debug */,
+				88F69262217F3DC600945821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1A4998C189E744500E2A2E2 /* Build configuration list for PBXNativeTarget "StreamingKitMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
